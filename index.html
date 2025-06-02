@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="has-navbar-fixed-top">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genética</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="https://raw.githubusercontent.com/Taynara9304/web/refs/heads/main/aula05/imagens/logo-ifpr.png" alt="Logo IFPR" style="max-height: 3rem;">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#secao1">Genética</a>
+        <a class="navbar-item" href="#secao2">História da Genética</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">Principais autores</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#secao3">Charles Darwin</a>
+            <a class="navbar-item" href="#secao3">Gregor Mendel</a>
+          </div>
+        </div>
+        <a class="navbar-item" href="#secao4">Conceitos básicos</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section" id="secao1">
+    <div class="container">
+      <h1 class="title has-text-success">Genética</h1>
+      <p>A Genética é a ciência da hereditariedade. Ela estuda o que são os genes, como eles transmitem as informações e como elas são passadas adiante, para a próxima geração, por meio da reprodução. A informação genética de um organismo é denominada genoma, e ele é organizado em cromossomos. Gregor Mendel é considerado o pai da Genética.</p>
+
+      <div class="columns is-vcentered">
+        <div class="column is-half">
+          <figure class="image">
+            <img class="img" src="https://raw.githubusercontent.com/Taynara9304/web/refs/heads/main/aula05/imagens/dna.png" alt="DNA">
+          </figure>
+        </div>
+        <div class="column is-half">
+          <h2 class="title is-4">O que é genética</h2>
+          <p>A Genética é área da Biologia que estuda a herança biológica ou hereditariedade. O DNA é a molécula que transmite as informações hereditárias dos genitores para os descendentes por meio da fecundação. Os gametas (óvulo e espermatozoide) contêm toda a informação hereditária para originar um novo organismo, e tais informações estão distribuídas em unidades fundamentais denominadas genes.</p>
+          <p>Os genes manifestam suas características sintetizando proteínas, que são substâncias essenciais à estrutura das células. A síntese de uma proteína representa, então, a “tradução” da informação do gene.</p>
+        </div>
+      </div>
+
+      <p>A Genética pode ser dividida em dois ramos: molecular e populacional. A Genética Molecular, conforme o nome indica, é a área da Biologia que estuda a função dos genes a nível molecular e pode fornecer, por exemplo, novos meios de tratar doenças, pois as técnicas são capazes de produzir diagnósticos muito sensíveis. A Genética de Populações ou Genética Populacional estuda a distribuição e composição dos genes de uma ou mais populações e os fatores que influenciam a diversidade genética dessas populações.</p>
+    </div>
+  </section>
+
+  <section class="section" id="secao2">
+    <div class="container">
+      <h1 class="title has-text-success">História da Genética</h1>
+      <div class="columns">
+        <div class="column is-one-third">
+          <figure class="image">
+            <img class="img" src="https://taynara9304.github.io/web/aula05/imagens/hipocrates.png" alt="Hipócrates">
+          </figure>
+        </div>
+        <div class="column">
+          <p>A história da Genética é muito antiga. Muitos filósofos, estudiosos e pesquisadores propuseram modelos de como as características são passadas de pais para filhos. Vamos conhecer algumas dessas teorias.</p>
+          <p>Os gregos antigos se interessavam no estudo da reprodução humana e da hereditariedade, e várias teorias e conceitos foram levantados naquela época, como a teoria da <span class="has-text-success has-tooltip-multiline" data-tooltip="Teoria de Hipócrates que sugeria que partículas de todo o corpo eram transmitidas aos filhos.">pangênese</span>, defendida por Hipócrates, que propôs que pequenas partículas de várias partes do corpo continham as informações hereditárias. Essa teoria perdurou por um bom tempo e foi aceita até o século XIX.</p>
+        </div>
+      </div>
+
+      <p>Aristóteles rejeitou a teoria da pangênese, indicando que o ser humano é uma mistura dos traços dos pais, porém com o pai fornecendo a força vital e a mãe fornecendo a matéria prima.</p>
+      <p>Outra teoria era a do pré-formismo, que indicava que em um dos gametas, masculino ou feminino, já havia um ser pré-formado, o homúnculo ou pequeno homem, que simplesmente aumentaria de tamanho durante seu desenvolvimento.</p>
+      <p>O desenvolvimento do estudo das células teve uma forte influência sobre a Genética. De acordo com a teoria celular, toda vida é composta por células, e estas surgem apenas de células preexistentes.</p>
+    </div>
+  </section>
+
+  <section class="section" id="secao3">
+    <div class="container">
+      <h1 class="title has-text-success">Principais autores</h1>
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://taynara9304.github.io/web/aula05/imagens/charles-darwin.png" alt="Charles Darwin">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Charles Darwin</p>
+              <p>Naturalista britânico, propôs a teoria da evolução por seleção natural.</p>
+              <button class="button is-success" onclick="abrirSobreposicao('darwin')">Saiba mais</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://taynara9304.github.io/web/aula05/imagens/gregor-mendel.png" alt="Gregor Mendel">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Gregor Mendel</p>
+              <p>Considerado o pai da genética, formulou as leis da hereditariedade.</p>
+              <button class="button is-success" onclick="abrirSobreposicao('mendel')">Saiba mais</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://cdn11.bigcommerce.com/s-yzgoj/images/stencil/1280x1280/products/1570533/4238463/apidnjwje__87647.1627188576.jpg?c=2" alt="Thomas Hunt Morgan">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Thomas Hunt Morgan</p>
+              <p>Biólogo americano que confirmou que os genes estão nos cromossomos.</p>
+              <button class="button is-success" onclick="abrirSobreposicao('morgan')">Saiba mais</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Carousel Container -->
+<div class="carousel box" style="position: relative; max-width: 800px; margin: auto;">
+    <!-- Slides -->
+    <div class="carousel-item is-active">
+      <figure class="image is-4by3">
+        <img src="https://pontobiologia.com.br/wp-content/uploads/2017/12/DNA.jpg" alt="Projeto 1">
+      </figure>
+      <div class="has-background-dark has-text-white p-4 has-text-centered">
+        <h5 class="title is-5">DNA</h5>
+        <p>Molécula de ácido desoxirribonucleico que carrega toda a informação genética de um organismo.</p>
+      </div>
+    </div>
+  
+    <div class="carousel-item">
+      <figure class="image is-4by3">
+        <img src="https://i0.wp.com/blog.portaleducacao.com.br/wp-content/uploads/2021/04/554-Cromossomos-Autossomos-X-Cromossomos-Sexuais.jpg?fit=740%2C416&ssl=1" alt="Projeto 2">
+      </figure>
+      <div class="has-background-dark has-text-white p-4 has-text-centered">
+        <h5 class="title is-5">Cromossomo</h5>
+        <p>Uma molécula de DNA condensada, enrolada em proteínas.</p>
+      </div>
+    </div>
+  
+    <div class="carousel-item">
+      <figure class="image is-4by3">
+        <img src="https://medlineplus.gov/images/PX00006G_PRESENTATION.jpeg" alt="Projeto 3">
+      </figure>
+      <div class="has-background-dark has-text-white p-4 has-text-centered">
+        <h5 class="title is-5">Gene</h5>
+        <p>Segmento de DNA localizado em locais específicos dos cromossomos, responsável pela determinação da síntese proteica.</p>
+      </div>
+    </div>
+  
+    
+    <!-- Navigation Arrows -->
+    <button class="button is-dark is-medium carousel-prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); z-index: 2;">
+      ◀
+    </button>
+    <button class="button is-dark is-medium carousel-next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); z-index: 2;">
+      ▶
+    </button>
+  </div>
+  
+  <!-- Carousel Script -->
+  <script>
+    const items = document.querySelectorAll('.carousel-item');
+    let current = 0;
+  
+    const showSlide = (index) => {
+      items.forEach((item, i) => {
+        item.classList.toggle('is-active', i === index);
+      });
+    };
+  
+    document.querySelector('.carousel-prev').addEventListener('click', () => {
+      current = (current - 1 + items.length) % items.length;
+      showSlide(current);
+    });
+  
+    document.querySelector('.carousel-next').addEventListener('click', () => {
+      current = (current + 1) % items.length;
+      showSlide(current);
+    });
+  
+    showSlide(current);
+  </script>
+  
+  <!-- Hide inactive slides -->
+  <style>
+    .carousel-item {
+      display: none;
+    }
+  
+    .carousel-item.is-active {
+      display: block;
+    }
+  </style>
+  
+  
+
+  <!-- Sobreposições -->
+  <div id="overlay-darwin" class="overlay">
+    <div class="overlay-content">
+      <h2 class="title">Charles Darwin</h2>
+      <p>Charles Darwin foi um naturalista inglês que desenvolveu a teoria da evolução por seleção natural. Sua obra mais conhecida é "A Origem das Espécies", de 1859.</p>
+      <button class="button is-danger" onclick="fecharSobreposicao('darwin')">Fechar</button>
+    </div>
+  </div>
+
+  <div id="overlay
+::contentReference[oaicite:1]{index=1}
