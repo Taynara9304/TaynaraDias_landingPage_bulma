@@ -132,87 +132,98 @@
     </div>
   </section>
 
- <!-- Carousel Container -->
 <div class="carousel box" style="position: relative; max-width: 800px; margin: auto;">
-    <!-- Slides -->
-    <div class="carousel-item is-active">
-      <figure class="image is-4by3">
-        <img src="https://pontobiologia.com.br/wp-content/uploads/2017/12/DNA.jpg" alt="Projeto 1">
-      </figure>
-      <div class="has-background-dark has-text-white p-4 has-text-centered">
-        <h5 class="title is-5">DNA</h5>
-        <p>Molécula de ácido desoxirribonucleico que carrega toda a informação genética de um organismo.</p>
-      </div>
+  <div class="carousel-item is-active">
+    <figure class="image is-4by3">
+      <img src="https://pontobiologia.com.br/wp-content/uploads/2017/12/DNA.jpg" alt="DNA">
+    </figure>
+    <div class="has-background-dark has-text-white p-4 has-text-centered">
+      <h5 class="title is-5" style="color: white;">DNA</h5>
+      <p>Molécula de ácido desoxirribonucleico que carrega toda a informação genética de um organismo.</p>
     </div>
-  
-    <div class="carousel-item">
-      <figure class="image is-4by3">
-        <img src="https://i0.wp.com/blog.portaleducacao.com.br/wp-content/uploads/2021/04/554-Cromossomos-Autossomos-X-Cromossomos-Sexuais.jpg?fit=740%2C416&ssl=1" alt="Projeto 2">
-      </figure>
-      <div class="has-background-dark has-text-white p-4 has-text-centered">
-        <h5 class="title is-5">Cromossomo</h5>
-        <p>Uma molécula de DNA condensada, enrolada em proteínas.</p>
-      </div>
-    </div>
-  
-    <div class="carousel-item">
-      <figure class="image is-4by3">
-        <img src="https://medlineplus.gov/images/PX00006G_PRESENTATION.jpeg" alt="Projeto 3">
-      </figure>
-      <div class="has-background-dark has-text-white p-4 has-text-centered">
-        <h5 class="title is-5">Gene</h5>
-        <p>Segmento de DNA localizado em locais específicos dos cromossomos, responsável pela determinação da síntese proteica.</p>
-      </div>
-    </div>
-  
-    
-    <!-- Navigation Arrows -->
-    <button class="button is-dark is-medium carousel-prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); z-index: 2;">
-      ◀
-    </button>
-    <button class="button is-dark is-medium carousel-next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); z-index: 2;">
-      ▶
-    </button>
   </div>
-  
-  <!-- Carousel Script -->
-  <script>
-    const items = document.querySelectorAll('.carousel-item');
-    let current = 0;
-  
-    const showSlide = (index) => {
-      items.forEach((item, i) => {
-        item.classList.toggle('is-active', i === index);
-      });
-    };
-  
-    document.querySelector('.carousel-prev').addEventListener('click', () => {
-      current = (current - 1 + items.length) % items.length;
-      showSlide(current);
-    });
-  
-    document.querySelector('.carousel-next').addEventListener('click', () => {
-      current = (current + 1) % items.length;
-      showSlide(current);
-    });
-  
-    showSlide(current);
-  </script>
-  
-  <!-- Hide inactive slides -->
-  <style>
-    .carousel-item {
-      display: none;
-    }
-  
-    .carousel-item.is-active {
-      display: block;
-    }
-  </style>
-  
-  
 
-  <!-- Sobreposições -->
+  <div class="carousel-item">
+    <figure class="image is-4by3">
+      <img src="https://i0.wp.com/blog.portaleducacao.com.br/wp-content/uploads/2021/04/554-Cromossomos-Autossomos-X-Cromossomos-Sexuais.jpg?fit=740%2C416&ssl=1" alt="Cromossomo">
+    </figure>
+    <div class="has-background-dark has-text-white p-4 has-text-centered">
+      <h5 class="title is-5" style="color: white;">Cromossomo</h5>
+      <p>Uma molécula de DNA condensada, enrolada em proteínas.</p>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <figure class="image is-4by3">
+      <img src="https://medlineplus.gov/images/PX00006G_PRESENTATION.jpeg" alt="Gene">
+    </figure>
+    <div class="has-background-dark has-text-white p-4 has-text-centered">
+      <h5 class="title is-5" style="color: white;">Gene</h5>
+      <p>Segmento de DNA localizado em locais específicos dos cromossomos, responsável pela determinação da síntese proteica.</p>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <figure class="image is-4by3">
+      <img src="https://s3.static.brasilescola.uol.com.br/img/2016/04/alelo.jpg" alt="Lócus gênico">
+    </figure>
+    <div class="has-background-dark has-text-white p-4 has-text-centered">
+      <h5 class="title is-5" style="color: white;">Lócus gênico</h5>
+      <p>É a posição que o gene ocupa no cromossomo.</p>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <figure class="image is-4by3">
+      <img src="https://files.cursoenemgratuito.com.br/uploads/2023/09/Design-sem-nome-52-1024x538.jpg" alt="Alelos">
+    </figure>
+    <div class="has-background-dark has-text-white p-4 has-text-centered">
+      <h5 class="title is-5" style="color: white;">Alelos</h5>
+      <p>São genes que ocupam o mesmo lócus no par de cromossomos homólogos.</p>
+    </div>
+  </div>
+
+  <button class="button is-dark is-medium carousel-prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); z-index: 2;">
+    ◀
+  </button>
+  <button class="button is-dark is-medium carousel-next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); z-index: 2;">
+    ▶
+  </button>
+</div>
+
+<script>
+  const items = document.querySelectorAll('.carousel-item');
+  let current = 0;
+
+  const showSlide = (index) => {
+    items.forEach((item, i) => {
+      item.classList.toggle('is-active', i === index);
+    });
+  };
+
+  document.querySelector('.carousel-prev').addEventListener('click', () => {
+    current = (current - 1 + items.length) % items.length;
+    showSlide(current);
+  });
+
+  document.querySelector('.carousel-next').addEventListener('click', () => {
+    current = (current + 1) % items.length;
+    showSlide(current);
+  });
+
+  showSlide(current);
+</script>
+
+<style>
+  .carousel-item {
+    display: none;
+  }
+
+  .carousel-item.is-active {
+    display: block;
+  }
+</style>
+
   <div id="overlay-darwin" class="overlay">
     <div class="overlay-content">
       <h2 class="title">Charles Darwin</h2>
